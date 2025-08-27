@@ -1,0 +1,86 @@
+body {
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  /* margin: 50px 0px 0px 0px; */
+}
+table,
+tr,
+td {
+  text-align: center;
+}
+td {
+  border: 1px solid black;
+  /* padding: 10px 10px; */
+  /* font-size: 24px; */
+}
+table {
+  width: 100%;
+  margin: auto;
+}
+abbr {
+  text-decoration: none;
+}
+/* classes */
+.border-none {
+  border: none;
+}
+
+/* .header {
+  background-color: lightgray;
+  height: 220px;
+  margin-top: -55px;
+  margin-bottom: 60px;
+  margin-left: -10px;
+  margin-right: -10px;
+} */
+
+.main-heading {
+  height: 15vh;
+  padding: 10px 0px 0px 0px;
+  margin: -20px -10px 0px -10px;
+  margin-bottom: 0px;
+}
+/* Colors of Tables */
+.orange {
+  background-color: rgb(255, 166, 0);
+}
+.light-pink {
+  background-color: #ffc0cb;
+}
+.yellow {
+  background-color: rgb(228, 228, 98);
+}
+.light-green {
+  background-color: lightgreen;
+}
+.light-blue {
+  background-color: rgb(69, 174, 209);
+}
+.light-red {
+  background-color: lightcoral;
+}
+.dark-orange {
+  background-color: rgb(194, 121, 31);
+}
+.light-bluer {
+  background-color: lightcyan;
+}
+.white-diamond {
+  background-color: #ecefec;
+}
+.grayish-orange {
+  background-color: #f5deb3;
+}
+/* Text Colors */
+.green-text {
+  color: #008080;
+}
+.purple-text {
+  color: rgb(4, 17, 201);
+}
+.metals {
+  color: #8b0000;
+}

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Forms</title>
+    <!-- I was unable to download zip file where example images were present so I created html form by my own-->
+  </head>
+  <body>
+    <header>
+      <h1>Multi-Step Registration Process</h1>
+      <nav>
+        <ul>
+          <li><a href="#step1">Step 1: Personal Information</a></li>
+          <li><a href="#step2">Step 2: Contact Details</a></li>
+          <li><a href="#step3">Step 3: Preferences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Step 1: Personal Information Form -->
+      <section id="step1">
+        <header>
+          <h2>Step 1 of 3: Personal Information</h2>
+          <p>Please provide your basic personal details</p>
+        </header>
+
+        <form action="#step2" method="get">
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <div>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+
+            <div>
+              <label for="dateOfBirth">Date of Birth:</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+            </div>
+
+            <div>
+              <fieldset>
+                <legend>Gender</legend>
+                <label>
+                  <input type="radio" name="gender" value="male" required />
+                  Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="female" required />
+                  Female
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="other" required />
+                  Other
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="prefer-not-to-say"
+                    required
+                  />
+                  Prefer not to say
+                </label>
+              </fieldset>
+            </div>
+
+            <div>
+              <label for="nationality">Nationality:</label>
+              <select id="nationality" name="nationality" required>
+                <option value="">Select your nationality</option>
+                <option value="pak">Pakistan</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="jp">Japan</option>
+                <option value="in">India</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Next: Contact Details →</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Step 2: Contact Details Form -->
+      <section id="step2">
+        <header>
+          <h2>Step 2 of 3: Contact Details</h2>
+          <p>Please provide your contact information</p>
+        </header>
+
+        <form action="#step3" method="get">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <div>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div>
+              <label for="address">Street Address:</label>
+              <textarea
+                id="address"
+                name="address"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+
+            <div>
+              <label for="state">State/Province:</label>
+              <input type="text" id="state" name="state" required />
+            </div>
+
+            <div>
+              <label for="zipCode">ZIP/Postal Code:</label>
+              <input type="text" id="zipCode" name="zipCode" required />
+            </div>
+
+            <div>
+              <label for="country">Country:</label>
+              <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="jp">Japan</option>
+                <option value="in">India</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="button" onclick="location.href='#step1'">
+              ← Back: Personal Info
+            </button>
+            <button type="submit">Next: Preferences →</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Step 3: Preferences Form -->
+      <section id="step3">
+        <header>
+          <h2>Step 3 of 3: Preferences</h2>
+          <p>Please specify your preferences and complete registration</p>
+        </header>
+
+        <form action="#confirmation" method="get">
+          <fieldset>
+            <legend>Communication Preferences</legend>
+
+            <div>
+              <fieldset>
+                <legend>How would you like to receive updates?</legend>
+                <label>
+                  <input type="checkbox" name="communication" value="email" />
+                  Email newsletters </label
+                ><br />
+                <label>
+                  <input type="checkbox" name="communication" value="sms" />
+                  SMS notifications </label
+                ><br />
+                <label>
+                  <input type="checkbox" name="communication" value="phone" />
+                  Phone calls </label
+                ><br />
+                <label>
+                  <input type="checkbox" name="communication" value="mail" />
+                  Physical mail </label
+                ><br />
+              </fieldset>
+            </div>
+            <br />
+            <div>
+              <label for="interests">Areas of Interest:</label>
+              <select id="interests" name="interests" multiple size="5">
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+                <option value="travel">Travel</option>
+                <option value="food">Food & Cooking</option>
+                <option value="books">Books & Literature</option>
+                <option value="movies">Movies & Entertainment</option>
+                <option value="fitness">Health & Fitness</option>
+                <option value="business">Business & Finance</option>
+                <option value="education">Education</option>
+              </select>
+              <small>Hold Ctrl (Cmd on Mac) to select multiple options</small>
+            </div>
+            <br />
+            <div>
+              <label for="frequency">Communication Frequency:</label>
+              <select id="frequency" name="frequency" required>
+                <option value="">Select frequency</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="never">Never</option>
+              </select>
+            </div>
+            <br />
+            <div>
+              <label for="comments">Additional Comments:</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                placeholder="Any additional information you'd like to share..."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Terms and Conditions</legend>
+
+            <div>
+              <label>
+                <input type="checkbox" name="terms" value="accepted" required />
+                I agree to the
+                <a href="#terms" target="_blank">Terms and Conditions</a>
+              </label>
+            </div>
+
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  value="accepted"
+                  required
+                />
+                I agree to the
+                <a href="#privacy" target="_blank">Privacy Policy</a>
+              </label>
+            </div>
+
+            <!-- Confirmation Section -->
+            <div>
+              <label>
+                <input type="checkbox" name="newsletter" value="subscribed" />
+                Subscribe to our newsletter (optional)
+              </label>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="button" onclick="location.href='#step2'">
+              ← Back: Contact Details
+            </button>
+            <button type="submit">Complete Registration ✓</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

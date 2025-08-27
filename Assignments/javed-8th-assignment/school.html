@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Admission Form</title>
+  </head>
+  <body>
+    <h1>School Admission Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>School Admission Form</legend>
+        <!-- student name -->
+        <label for="name">Student Name:</label>
+        <input type="text" name="name" id="name" maxlength="40" required />
+        <br /><br />
+        <!-- date of birth -->
+        <label for="birthdate">Birthday:</label>
+        <input type="date" name="birthdate" id="birthdate" required />
+        <br /><br />
+        <!-- Grade Applying for -->
+        <label for="grade">Grade Applying for:</label>
+        <input
+          type="number"
+          name="grade"
+          id="grade"
+          min="1"
+          max="12"
+          required
+        />
+        <br /><br />
+        <!-- parent contact number -->
+        <label for="contact">Parent Contact Number:</label>
+        <input
+          type="tel"
+          name="contact"
+          id="contact"
+          pattern="[0-9]{4}[0-9]{7}"
+          placeholder="03XXXXXXXXX"
+          maxlength="11"
+          required
+        />
+        <br /><br />
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

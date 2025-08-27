@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal form</title>
+  </head>
+  <body>
+    <h2>Personal Information Form</h2>
+    <form action="personal.html" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- full name -->
+        <label for="name">Name:</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          maxlength="50"
+          required
+          placeholder="Enter your full Name"
+        />
+        <br /><br />
+        <!-- age -->
+        <label for="age">Age: </label> <br />
+        <input type="number" name="age" id="age" min="10" max="100" required />
+        <br /><br />
+        <!-- email -->
+        <label for="email">Email:</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+        <br /><br />
+        <!-- short bio -->
+        <label for="bio">bio:</label><br />
+        <textarea
+          name="bio"
+          id="bio"
+          maxlength="200"
+          rows="4"
+          cols="50"
+          placeholder="Tell us a little about yourself (max 200 characters)"
+        ></textarea>
+        <br /><br />
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

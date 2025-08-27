@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>politics</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Latest in Politics</h1>
+        <article>
+          <header>
+            <h2>Election Updates 2024</h2>
+            <time datetime="2024-06-10">June 10, 2024</time>
+            <address>By Jane Doe</address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Election campaign"
+              width="400"
+            />
+            <figcaption>Political campaign rally in progress</figcaption>
+          </figure>
+          <p>
+            The 2024 elections are shaping up to be one of the most contested in
+            recent history. Candidates from all major parties are ramping up
+            their campaigns across the country.
+          </p>
+          <ul>
+            <li>Debates scheduled in major cities</li>
+            <li>Record voter registration</li>
+            <li>Key issues: economy, healthcare, education</li>
+          </ul>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              Political analysts predict a close race, with several swing states
+              playing a crucial role in the outcome. Stay tuned for live updates
+              and expert opinions.
+            </p>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h2>International Relations</h2>
+            <time datetime="2024-06-09">June 9, 2024</time>
+            <address>By John Smith</address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+              alt="International summit"
+              width="400"
+            />
+            <figcaption>World leaders at a summit</figcaption>
+          </figure>
+          <p>
+            Diplomatic talks between several nations have led to new agreements
+            on trade and security. Leaders emphasized the importance of
+            cooperation in addressing global challenges.
+          </p>
+          <ol>
+            <li>Trade agreements signed</li>
+            <li>Joint security initiatives</li>
+            <li>Environmental commitments</li>
+          </ol>
+          <blockquote>
+            "Collaboration is the key to a peaceful and prosperous future."
+            &mdash; UN Secretary-General
+          </blockquote>
+        </article>
+        <section>
+          <h2>Political Parties</h2>
+          <table border="1">
+            <caption>
+              Major Political Parties
+            </caption>
+            <thead>
+              <tr>
+                <th>Party</th>
+                <th>Leader</th>
+                <th>Founded</th>
+                <th>Seats</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Democratic Party</td>
+                <td>Emily Clark</td>
+                <td>1828</td>
+                <td>220</td>
+              </tr>
+              <tr>
+                <td>Republican Party</td>
+                <td>Michael Lee</td>
+                <td>1854</td>
+                <td>215</td>
+              </tr>
+              <tr>
+                <td>Green Party</td>
+                <td>Sophia Turner</td>
+                <td>2001</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Upcoming Events</h2>
+          <nav>
+            <ul>
+              <li><a href="#debate">Presidential Debate</a></li>
+              <li><a href="#rally">National Rally</a></li>
+              <li><a href="#conference">Policy Conference</a></li>
+            </ul>
+          </nav>
+          <dl>
+            <dt id="debate">Presidential Debate</dt>
+            <dd>June 15, 2024 - Live broadcast from Washington D.C.</dd>
+            <dt id="rally">National Rally</dt>
+            <dd>June 20, 2024 - Central Park, New York</dd>
+            <dt id="conference">Policy Conference</dt>
+            <dd>June 25, 2024 - Online event</dd>
+          </dl>
+        </section>
+        <aside>
+          <h3>Did You Know?</h3>
+          <p>
+            The first televised presidential debate was held in 1960 between
+            John F. Kennedy and Richard Nixon.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+            alt="Historic debate"
+            width="200"
+          />
+        </aside>
+        <form action="/subscribe" method="post">
+          <fieldset>
+            <legend>Subscribe for Updates</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label>
+              <input type="checkbox" name="daily" value="yes" />
+              Daily Newsletter
+            </label>
+            <br />
+            <button type="submit">Subscribe</button>
+          </fieldset>
+        </form>
+        <hr />
+        <section>
+          <h2>Opinion Poll</h2>
+          <form>
+            <p>Who do you think will win the 2024 election?</p>
+            <input
+              type="radio"
+              id="candidate1"
+              name="poll"
+              value="candidate1"
+            />
+            <label for="candidate1">Emily Clark</label><br />
+            <input
+              type="radio"
+              id="candidate2"
+              name="poll"
+              value="candidate2"
+            />
+            <label for="candidate2">Michael Lee</label><br />
+            <input
+              type="radio"
+              id="candidate3"
+              name="poll"
+              value="candidate3"
+            />
+            <label for="candidate3">Sophia Turner</label><br />
+            <input
+              type="radio"
+              id="candidate4"
+              name="poll"
+              value="candidate4"
+            />
+            <label for="candidate4">Undecided</label><br />
+            <button type="submit">Vote</button>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

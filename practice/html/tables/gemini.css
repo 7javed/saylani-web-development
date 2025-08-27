@@ -1,0 +1,175 @@
+/* General styling for the page */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8; /* A light grey background */
+}
+
+/* Container for the table to allow horizontal scrolling on small screens */
+.periodic-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* The main table for the periodic table */
+.periodic-table {
+  border-spacing: 4px;
+  border-collapse: separate;
+  margin: auto; /* Center the table */
+}
+
+/* Styling for each element cell */
+.element {
+  width: 5.5vw;
+  height: 5.5vw;
+  max-width: 80px;
+  max-height: 80px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 4px;
+  border: 1px solid #a0aec0; /* A slightly darker border */
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-radius: 8px; /* Rounded corners */
+  color: #2d3748; /* Dark grey text */
+  background-color: #ffffff; /* White background for elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.element:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* Atomic number styling */
+.atomic-number {
+  font-size: 0.7em;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Element symbol styling */
+.symbol {
+  font-size: 1.4em;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Empty cells used for spacing */
+.empty {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Spacer row to separate main table from Lanthanides/Actinides */
+.spacer-row td {
+  height: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Color coding for element groups based on the provided image */
+
+.alkali-metal {
+  background-color: #fca5a5;
+  border-color: #ef4444;
+} /* Red */
+.alkaline-earth-metal {
+  background-color: #fdba74;
+  border-color: #f97316;
+} /* Orange */
+.transition-metal {
+  background-color: #fde047;
+  border-color: #eab308;
+} /* Yellow */
+.lanthanide {
+  background-color: #d8b4fe;
+  border-color: #a855f7;
+} /* Purple */
+.actinide {
+  background-color: #f9a8d4;
+  border-color: #ec4899;
+} /* Pink */
+.post-transition-metal {
+  background-color: #93c5fd;
+  border-color: #3b82f6;
+} /* Blue */
+.metalloid {
+  background-color: #6ee7b7;
+  border-color: #10b981;
+} /* Green */
+.nonmetal {
+  background-color: #a7f3d0;
+  border-color: #059669;
+} /* Lighter Green */
+.halogen {
+  background-color: #fcd34d;
+  border-color: #f59e0b;
+} /* Amber */
+.noble-gas {
+  background-color: #bae6fd;
+  border-color: #0ea5e9;
+} /* Sky Blue */
+.unknown {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+} /* Grey */
+
+/* Responsive Design Adjustments */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .element {
+    min-width: 50px;
+    min-height: 50px;
+  }
+  .symbol {
+    font-size: 1.2em;
+  }
+  .atomic-number {
+    font-size: 0.6em;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .periodic-table {
+    border-spacing: 2px;
+  }
+  .element {
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  .symbol {
+    font-size: 1em;
+  }
+  .atomic-number {
+    font-size: 0.5em;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+
+/* My congigs */
+.first-h1 {
+    font-size: 50px;
+}

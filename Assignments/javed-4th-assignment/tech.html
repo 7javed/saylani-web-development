@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tech</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Latest in Technology</h1>
+        <article>
+          <header>
+            <h2>AI Revolutionizes Healthcare</h2>
+            <p><time datetime="2024-06-10">June 10, 2024</time> | By <span>Jane Doe</span></p>
+          </header>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="AI in healthcare" width="400">
+            <figcaption>Artificial Intelligence in modern hospitals</figcaption>
+          </figure>
+          <p>Artificial Intelligence is transforming the healthcare industry by enabling faster diagnoses and personalized treatments. <mark>Machine learning</mark> algorithms analyze vast amounts of data to assist doctors in making informed decisions.</p>
+          <ul>
+            <li>Improved diagnostics</li>
+            <li>Personalized medicine</li>
+            <li>Remote patient monitoring</li>
+          </ul>
+          <details>
+            <summary>Read more</summary>
+            <p>AI-powered tools are now being used in radiology, pathology, and even surgery, making healthcare more efficient and accessible.</p>
+          </details>
+        </article>
+        <hr>
+        <article>
+          <header>
+            <h2>Breakthroughs in Quantum Computing</h2>
+            <p><time datetime="2024-06-09">June 9, 2024</time> | By <span>John Smith</span></p>
+          </header>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Quantum computer" width="400">
+            <figcaption>Quantum computers are changing the world</figcaption>
+          </figure>
+          <p>Quantum computers use <strong>qubits</strong> to perform calculations at unprecedented speeds. This technology promises to solve problems that are currently impossible for classical computers.</p>
+          <ol>
+            <li>Cryptography advancements</li>
+            <li>Drug discovery</li>
+            <li>Complex simulations</li>
+          </ol>
+          <blockquote cite="https://www.ibm.com/quantum-computing/">
+            "Quantum computing will change the world as we know it." - IBM Research
+          </blockquote>
+        </article>
+        <hr>
+        <article>
+          <header>
+            <h2>SpaceX Launches New Satellite</h2>
+            <p><time datetime="2024-06-08">June 8, 2024</time> | By <span>Emily Clark</span></p>
+          </header>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564" alt="SpaceX rocket launch" width="400">
+            <figcaption>SpaceX Falcon 9 launching a satellite</figcaption>
+          </figure>
+          <p>SpaceX successfully launched a new communications satellite, expanding global internet coverage. The mission was completed using a reusable Falcon 9 rocket.</p>
+          <table border="1">
+            <caption>Mission Details</caption>
+            <thead>
+              <tr>
+                <th>Satellite</th>
+                <th>Launch Date</th>
+                <th>Rocket</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Starlink-25</td>
+                <td>2024-06-08</td>
+                <td>Falcon 9</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav>
+            <a href="https://www.spacex.com/" target="_blank" rel="noopener">Learn more</a>
+          </nav>
+        </article>
+      </section>
+      <aside>
+        <h3>Trending Topics</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Blockchain</a></li>
+            <li><a href="#">5G Networks</a></li>
+            <li><a href="#">Virtual Reality</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+          </ul>
+        </nav>
+        <form>
+          <fieldset>
+            <legend>Subscribe for Updates</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="checkbox" id="agree" name="agree" value="yes">
+            <label for="agree">I agree to the terms</label>
+            <button type="submit">Subscribe</button>
+          </fieldset>
+        </form>
+      </aside>
+      <section>
+        <h2>Upcoming Tech Events</h2>
+        <dl>
+          <dt>Tech Summit 2024</dt>
+          <dd>July 15, 2024 - San Francisco, CA</dd>
+          <dt>AI Expo</dt>
+          <dd>August 20, 2024 - New York, NY</dd>
+        </dl>
+        <progress value="70" max="100"></progress>
+        <meter value="0.8">80%</meter>
+      </section>
+    </main>
+</body>
+</html>

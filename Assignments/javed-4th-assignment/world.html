@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>world</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>World News</h1>
+        <article>
+          <header>
+            <h2>Global Climate Summit 2024</h2>
+            <time datetime="2024-06-15">June 15, 2024</time>
+            <address>
+              By <a href="mailto:reporter@example.com">Jane Doe</a>,
+              International Correspondent
+            </address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Climate Summit"
+              width="400"
+            />
+            <figcaption>World leaders at the Climate Summit 2024.</figcaption>
+          </figure>
+          <p>
+            The annual <strong>Global Climate Summit</strong> brought together
+            leaders from over 100 countries to discuss urgent environmental
+            issues. The summit focused on <em>renewable energy</em>,
+            <mark>carbon emissions</mark>, and sustainable development.
+          </p>
+          <ul>
+            <li>Renewable energy initiatives</li>
+            <li>International agreements</li>
+            <li>Technological advancements</li>
+          </ul>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              Delegates agreed on new targets for reducing emissions and
+              increasing investment in green technology. The summit concluded
+              with a joint declaration.
+            </p>
+          </details>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h2>Economic Growth in Asia</h2>
+            <time datetime="2024-06-10">June 10, 2024</time>
+            <address>
+              By <a href="mailto:economist@example.com">John Smith</a>
+            </address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+              alt="Asian Cityscape"
+              width="400"
+            />
+            <figcaption>Rapid urban development in Asia.</figcaption>
+          </figure>
+          <p>
+            Asian economies are experiencing <b>unprecedented growth</b> in
+            2024. <i>Infrastructure</i> projects and
+            <u>foreign investments</u> are key drivers.
+          </p>
+          <ol>
+            <li>China's technology sector</li>
+            <li>India's manufacturing boom</li>
+            <li>ASEAN trade agreements</li>
+          </ol>
+          <blockquote cite="https://www.worldbank.org/">
+            "Asia remains the fastest-growing region in the world." - World Bank
+          </blockquote>
+          <aside>
+            <h3>Did you know?</h3>
+            <p>Asia is home to more than half of the world's population.</p>
+          </aside>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h2>Wildlife Conservation Efforts</h2>
+            <time datetime="2024-06-05">June 5, 2024</time>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+              alt="Wildlife Conservation"
+              width="400"
+            />
+            <figcaption>Endangered species in protected reserves.</figcaption>
+          </figure>
+          <p>
+            Conservationists are working to protect endangered species through
+            <abbr title="Non-Governmental Organizations">NGOs</abbr> and
+            government programs.
+          </p>
+          <table border="1">
+            <caption>
+              Endangered Species by Region
+            </caption>
+            <thead>
+              <tr>
+                <th>Region</th>
+                <th>Species</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Africa</td>
+                <td>Elephant</td>
+                <td>Vulnerable</td>
+              </tr>
+              <tr>
+                <td>Asia</td>
+                <td>Tiger</td>
+                <td>Endangered</td>
+              </tr>
+              <tr>
+                <td>South America</td>
+                <td>Jaguar</td>
+                <td>Near Threatened</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav>
+            <a href="#top">Back to top</a>
+          </nav>
+        </article>
+        <hr />
+        <section>
+          <h2>World Gallery</h2>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+              alt="Mountain Landscape"
+              width="300"
+            />
+            <figcaption>Mountain landscape in Europe.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"
+              alt="African Savannah"
+              width="300"
+            />
+            <figcaption>African savannah at sunset.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80"
+              alt="Asian Rice Fields"
+              width="300"
+            />
+            <figcaption>Rice fields in Asia.</figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Contact Our Team</h2>
+          <form
+            action="mailto:info@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <fieldset>
+              <legend>Send us a message</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <br />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="40"
+              ></textarea>
+              <br />
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">Subscribe to newsletter</label>
+              <br />
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

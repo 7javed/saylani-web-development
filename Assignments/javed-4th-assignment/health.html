@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css" />
+
+</head>
+<body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+
+  <main>
+    <section>
+      <h2>Health</h2>
+      <article>
+        <h3>Wellness Innovations: The Rise of FitLife Solutions</h3>
+        <p>
+          FitLife Solutions, a rapidly growing business in the health sector, is making waves with its innovative approach to wellness. Founded in 2018, the company focuses on integrating technology with personalized health plans, offering users a seamless experience through their mobile app and in-person consultations.
+        </p>
+        <p>
+          Their latest initiative, "Healthy Habits for All," aims to provide affordable health tracking devices to communities across the country. CEO Maria Thompson states, "Our mission is to empower individuals to take control of their health, regardless of their background or income level."
+        </p>
+        <p>
+          FitLife Solutions has partnered with several local clinics to expand access to preventive care and health education. Early reports suggest a positive impact on community wellness and engagement.
+        </p>
+        <p>
+          For more updates on health and business, stay tuned to Generic News Website.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Generic News Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travel</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Explore the World: Travel Destinations</h1>
+        <article>
+          <h2>Paris, France</h2>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Eiffel Tower in Paris" width="400">
+            <figcaption>The Eiffel Tower at sunset.</figcaption>
+          </figure>
+          <p>Paris, the city of lights, is known for its art, fashion, gastronomy, and culture. Visit the Louvre, stroll along the Seine, and enjoy French cuisine.</p>
+          <ul>
+            <li>Museums</li>
+            <li>Cafés</li>
+            <li>Historic Sites</li>
+          </ul>
+          <details>
+            <summary>More about Paris</summary>
+            <p>Don't miss the Notre-Dame Cathedral and Montmartre's artistic vibe.</p>
+          </details>
+        </article>
+        <article>
+          <h2>Kyoto, Japan</h2>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b" alt="Kyoto Temple" width="400">
+            <figcaption>Traditional temple in Kyoto.</figcaption>
+          </figure>
+          <p>Kyoto is famous for its classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses.</p>
+          <ol>
+            <li>Fushimi Inari Shrine</li>
+            <li>Kinkaku-ji</li>
+            <li>Gion District</li>
+          </ol>
+          <blockquote>
+            <p>"Traveling – it leaves you speechless, then turns you into a storyteller." – Ibn Battuta</p>
+          </blockquote>
+        </article>
+        <article>
+          <h2>New York City, USA</h2>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="New York City Skyline" width="400">
+            <figcaption>New York City skyline at dusk.</figcaption>
+          </figure>
+          <p>Known as the city that never sleeps, NYC offers iconic landmarks, diverse neighborhoods, and world-class entertainment.</p>
+          <nav>
+            <a href="https://www.nycgo.com/" target="_blank">NYC Official Guide</a>
+          </nav>
+          <table border="1">
+            <caption>Top NYC Attractions</caption>
+            <thead>
+              <tr>
+                <th>Attraction</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Central Park</td>
+                <td>Manhattan</td>
+              </tr>
+              <tr>
+                <td>Statue of Liberty</td>
+                <td>Liberty Island</td>
+              </tr>
+              <tr>
+                <td>Times Square</td>
+                <td>Midtown</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <aside>
+          <h3>Travel Tips</h3>
+          <ul>
+            <li>Pack light</li>
+            <li>Learn basic local phrases</li>
+            <li>Respect local customs</li>
+            <li>Keep digital copies of documents</li>
+          </ul>
+          <form>
+            <fieldset>
+              <legend>Subscribe for Updates</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+              <input type="checkbox" id="agree" name="agree">
+              <label for="agree">I agree to receive emails</label>
+              <br>
+              <button type="submit">Subscribe</button>
+            </fieldset>
+          </form>
+        </aside>
+        <section>
+          <h2>Frequently Asked Questions</h2>
+          <dl>
+            <dt>What is the best time to travel?</dt>
+            <dd>It depends on your destination and preferences. Research local weather and events.</dd>
+            <dt>How to find cheap flights?</dt>
+            <dd>Use comparison websites and book in advance.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Traveler's Checklist</h2>
+          <form>
+            <input type="checkbox" id="passport" name="passport">
+            <label for="passport">Passport</label><br>
+            <input type="checkbox" id="visa" name="visa">
+            <label for="visa">Visa</label><br>
+            <input type="checkbox" id="tickets" name="tickets">
+            <label for="tickets">Flight Tickets</label><br>
+            <input type="checkbox" id="insurance" name="insurance">
+            <label for="insurance">Travel Insurance</label><br>
+            <input type="checkbox" id="meds" name="meds">
+            <label for="meds">Medications</label><br>
+          </form>
+        </section>
+        <section>
+          <h2>Contact Us</h2>
+          <address>
+            Email: <a href="mailto:info@travel.com">info@travel.com</a><br>
+            Phone: <a href="tel:+1234567890">+1 234 567 890</a>
+          </address>
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.292292,48.858373,2.294481,48.859373&amp;layer=mapnik" width="300" height="200" title="Map of Paris"></iframe>
+        </section>
+      </section>
+    </main>
+</body>
+</html>

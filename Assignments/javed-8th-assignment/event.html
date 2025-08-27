@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <h1>Event Registration Form</h1>
+    <fieldset>
+      <legend>Event Registration Form</legend>
+      <form action="#" method="post">
+        <!-- name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <!-- email address -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <!-- select session time -->
+        <label for="session">Select Session Time:</label>
+        <select id="session" name="session" required>
+          <option value="morning">Morning (9 AM - 12 PM)</option>
+          <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+          <option value="evening">Evening (5 PM - 8 PM)</option>
+        </select>
+        <br><br>
+        <!-- number of guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="5" required>
+        <br><br>
+        <!-- submit button -->
+        <input type="submit" value="Register">  
+      </form>
+    </fieldset>
+  </body>
+</html>

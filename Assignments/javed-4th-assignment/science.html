@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>science</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Latest Science News</h1>
+        <article>
+          <header>
+            <h2>NASA Discovers New Exoplanet</h2>
+            <time datetime="2024-06-10">June 10, 2024</time>
+            <address>
+              By <a href="mailto:reporter@sciencenews.com">Jane Doe</a>
+            </address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80"
+              alt="Space and stars"
+              width="400"
+              height="250"
+            />
+            <figcaption>
+              NASA's telescope captures a distant exoplanet.
+            </figcaption>
+          </figure>
+          <p>
+            Scientists at NASA have discovered a new exoplanet orbiting a
+            distant star. The planet, named Kepler-452b, is located in the
+            habitable zone and may have conditions suitable for life.
+          </p>
+          <ul>
+            <li>Located 1,400 light-years away</li>
+            <li>Similar size to Earth</li>
+            <li>Orbits a sun-like star</li>
+          </ul>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              The discovery was made using the Kepler Space Telescope.
+              Researchers are now analyzing the planet's atmosphere for signs of
+              water and life.
+            </p>
+          </details>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h2>Breakthrough in Renewable Energy</h2>
+            <time datetime="2024-06-09">June 9, 2024</time>
+            <address>
+              By <a href="mailto:energy@sciencenews.com">John Smith</a>
+            </address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Solar panels"
+              width="400"
+              height="250"
+            />
+            <figcaption>
+              Solar panels in a field generating clean energy.
+            </figcaption>
+          </figure>
+          <p>
+            Engineers have developed a new type of solar panel that is 30% more
+            efficient than current models. This innovation could revolutionize
+            the renewable energy industry.
+          </p>
+          <ol>
+            <li>Higher efficiency</li>
+            <li>Lower production cost</li>
+            <li>Longer lifespan</li>
+          </ol>
+          <blockquote>
+            "This technology will change how we power our world," said Dr. Emily
+            Green, lead engineer.
+          </blockquote>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h2>Medical Science: New Vaccine Developed</h2>
+            <time datetime="2024-06-08">June 8, 2024</time>
+            <address>
+              By <a href="mailto:health@sciencenews.com">Sarah Lee</a>
+            </address>
+          </header>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1588776814546-ec7e3b1c2117?auto=format&fit=crop&w=800&q=80"
+              alt="Scientist in laboratory"
+              width="400"
+              height="250"
+            />
+            <figcaption>Scientists working on vaccine development.</figcaption>
+          </figure>
+          <p>
+            Researchers have announced a new vaccine that shows promise in
+            preventing a rare disease. Clinical trials are underway and initial
+            results are positive.
+          </p>
+          <table border="1">
+            <caption>
+              Vaccine Trial Phases
+            </caption>
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Status</th>
+                <th>Participants</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Phase 1</td>
+                <td>Completed</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Phase 2</td>
+                <td>Ongoing</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Phase 3</td>
+                <td>Planned</td>
+                <td>1000</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav>
+            <a href="#top">Back to top</a>
+          </nav>
+        </article>
+      </section>
+      <aside>
+        <h3>Science Topics</h3>
+        <nav>
+          <ul>
+            <li><a href="#space">Space</a></li>
+            <li><a href="#energy">Energy</a></li>
+            <li><a href="#medicine">Medicine</a></li>
+            <li><a href="#environment">Environment</a></li>
+          </ul>
+        </nav>
+        <section>
+          <h4>Did You Know?</h4>
+          <p>The human brain contains approximately 86 billion neurons.</p>
+        </section>
+        <section>
+          <h4>Contact Us</h4>
+          <form
+            action="mailto:info@sciencenews.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <fieldset>
+              <legend>Send Feedback</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <br />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                cols="20"
+              ></textarea>
+              <br />
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </fieldset>
+          </form>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>

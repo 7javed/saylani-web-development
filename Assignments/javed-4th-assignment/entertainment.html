@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entertainment News - Global Times</title>
+       <link rel="stylesheet" href="./assets/style.css" />
+
+
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+
+    <main>
+      <section>
+        <h2>Entertainment</h2>
+        <article>
+          <h3>Starlight Studios Announces New Sci-Fi Blockbuster</h3>
+          <p>
+            Starlight Studios, a leading name in the film industry, has unveiled
+            its plans for a new science fiction blockbuster set to release next
+            summer. The movie, titled <strong>"Galactic Horizons"</strong>,
+            promises cutting-edge visual effects and a star-studded cast.
+          </p>
+          <p>
+            CEO Amanda Lee stated, "We are excited to push the boundaries of
+            storytelling and technology. Our team is dedicated to delivering an
+            unforgettable cinematic experience."
+          </p>
+        </article>
+        <hr />
+        <article>
+          <h3>Random Business: ByteBrew Café Expands Nationwide</h3>
+          <p>
+            ByteBrew Café, a tech-themed coffee shop chain, is expanding to over
+            50 new locations across the country. Known for its unique blend of
+            specialty coffees and digital workspace amenities, ByteBrew has
+            become a favorite among remote workers and entrepreneurs.
+          </p>
+          <p>
+            Founder and CTO, Ravi Patel, commented, "Our mission is to create
+            spaces where creativity and productivity thrive. We are thrilled to
+            bring ByteBrew to more communities."
+          </p>
+        </article>
+        <hr />
+        <article>
+          <h3>Music Festival Lineup Announced</h3>
+          <p>
+            The annual Summer Beats Festival has announced its lineup, featuring
+            international artists and local bands. The event will take place at
+            Central Park, with tickets available online starting next week.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <fieldset>
+      <legend>Job Application Form</legend>
+      <form action="#" method="post">
+        <!-- full name -->
+        <label for="fullName">Full Name:</label><br />
+        <input type="text" id="fullName" name="fullName" required /><br /><br />
+        <!-- email -->
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <!-- experience -->
+        <label for="experience">Experience (in years):</label><br />
+        <input
+          type="number"
+          id="experience"
+          name="experience"
+          min="0"
+          max="40"
+          required
+        /><br /><br />
+        <!-- upload resume -->
+        <label for="resume">Upload Resume:</label><br />
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf,.doc,.docx"
+          required
+        /><br /><br />
+        <!-- submit button -->
+        <input type="submit" value="Submit Application" />
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sports</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Sports News</h1>
+        <article>
+          <h2>Football: Champions League Highlights</h2>
+          <img src="https://images.unsplash.com/photo-1505843279827-4b522fae0c3c?auto=format&fit=crop&w=800&q=80" alt="Football match">
+          <p>The Champions League saw thrilling matches last night with unexpected results. Fans were on the edge of their seats as teams battled for a spot in the finals.</p>
+          <ul>
+            <li>Team A defeated Team B</li>
+            <li>Player X scored a hat-trick</li>
+            <li>Referee decisions sparked debates</li>
+          </ul>
+          <details>
+            <summary>Read more</summary>
+            <p>With the finals approaching, teams are intensifying their training sessions. Coaches are focusing on strategies and player fitness.</p>
+          </details>
+          <aside>
+            <h3>Upcoming Fixtures</h3>
+            <ol>
+              <li>Team C vs Team D - 7:00 PM</li>
+              <li>Team E vs Team F - 9:00 PM</li>
+            </ol>
+          </aside>
+        </article>
+        <article>
+          <h2>Cricket: World Cup Updates</h2>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Cricket stadium">
+          <p>The Cricket World Cup is underway with teams from around the globe competing for the trophy. Spectators are enjoying close contests and record-breaking performances.</p>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Cricket bat and ball">
+            <figcaption>Cricket gear ready for action.</figcaption>
+          </figure>
+          <blockquote cite="https://www.espncricinfo.com/">
+            "It's the most competitive World Cup in years," said a renowned commentator.
+          </blockquote>
+          <nav>
+            <a href="#football">Football</a> |
+            <a href="#cricket">Cricket</a> |
+            <a href="#tennis">Tennis</a>
+          </nav>
+        </article>
+        <article>
+          <h2>Tennis: Grand Slam Results</h2>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Tennis court">
+          <p>Top seeds advanced to the next round after impressive performances. The tournament continues to surprise fans with upsets and comebacks.</p>
+          <table>
+            <caption>Top 3 Players</caption>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Player A</td>
+                <td>USA</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Player B</td>
+                <td>Spain</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Player C</td>
+                <td>Switzerland</td>
+              </tr>
+            </tbody>
+          </table>
+          <form>
+            <fieldset>
+              <legend>Vote for your favorite player</legend>
+              <label for="playerA">
+                <input type="radio" id="playerA" name="favorite" value="Player A"> Player A
+              </label>
+              <label for="playerB">
+                <input type="radio" id="playerB" name="favorite" value="Player B"> Player B
+              </label>
+              <label for="playerC">
+                <input type="radio" id="playerC" name="favorite" value="Player C"> Player C
+              </label>
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </article>
+        <section>
+          <h2>Other Sports</h2>
+          <dl>
+            <dt>Basketball</dt>
+            <dd>NBA playoffs are heating up with intense matches.</dd>
+            <dt>Formula 1</dt>
+            <dd>Drivers prepare for the next Grand Prix.</dd>
+            <dt>Golf</dt>
+            <dd>Major tournaments attract top players worldwide.</dd>
+          </dl>
+          <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <progress value="70" max="100">70%</progress>
+          <meter value="0.8">80%</meter>
+          <mark>Breaking News:</mark> New world record set in swimming!
+          <br>
+          <time datetime="2024-06-10">June 10, 2024</time>
+          <address>
+            Sports Desk<br>
+            123 Stadium Road<br>
+            Cityville
+          </address>
+          <input type="text" placeholder="Search sports news">
+          <button type="button">Search</button>
+          <hr>
+          <abbr title="International Olympic Committee">IOC</abbr> announces new events for the next Olympics.
+          <sup>1</sup>
+          <sub>Note</sub>
+          <code>&lt;score&gt;Team A 3-2 Team B&lt;/score&gt;</code>
+          <samp>Live commentary: Goal!</samp>
+          <kbd>Ctrl</kbd> + <kbd>F</kbd> to find a player.
+          <var>score</var>
+          <output>Result: Win</output>
+          <bdo dir="rtl">Sports</bdo>
+          <wbr>
+          <data value="2024">2024</data>
+        </section>
+      </section>
+    </main>
+</body>
+</html>

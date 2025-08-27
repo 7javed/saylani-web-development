@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lifestyle</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Lifestyle Trends in 2024</h1>
+        <article>
+          <h2>Healthy Living</h2>
+          <p>
+            Adopting a healthy lifestyle is more important than ever. People are
+            focusing on balanced diets, regular exercise, and mindfulness.
+          </p>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="Healthy food"
+              width="400"
+            />
+            <figcaption>
+              Fresh fruits and vegetables for a healthy diet.
+            </figcaption>
+          </figure>
+          <ul>
+            <li>Eat more vegetables</li>
+            <li>Stay hydrated</li>
+            <li>Exercise daily</li>
+            <li>Practice meditation</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Home Decor</h2>
+          <p>
+            Minimalism and eco-friendly materials are trending in home decor.
+            People are choosing sustainable furniture and natural lighting.
+          </p>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+              alt="Minimalist living room"
+              width="400"
+            />
+            <figcaption>Minimalist living spaces are in style.</figcaption>
+          </figure>
+          <ol>
+            <li>Use neutral colors</li>
+            <li>Choose sustainable materials</li>
+            <li>Maximize natural light</li>
+          </ol>
+        </article>
+        <article>
+          <h2>Travel & Adventure</h2>
+          <p>
+            Travelers are seeking unique experiences and eco-friendly
+            destinations. Solo travel and digital nomadism are on the rise.
+          </p>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca"
+              alt="Mountain adventure"
+              width="400"
+            />
+            <figcaption>Exploring nature is a top lifestyle choice.</figcaption>
+          </figure>
+          <details>
+            <summary>Popular Destinations</summary>
+            <ul>
+              <li>Bali</li>
+              <li>Iceland</li>
+              <li>New Zealand</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <h2>Fashion</h2>
+          <p>
+            Sustainable fashion is gaining popularity. People are opting for
+            eco-friendly fabrics and timeless styles.
+          </p>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+              alt="Sustainable fashion"
+              width="400"
+            />
+            <figcaption>Eco-friendly clothing is in demand.</figcaption>
+          </figure>
+          <blockquote>
+            "Fashion is about dressing according to what's fashionable. Style is
+            more about being yourself." – Oscar de la Renta
+          </blockquote>
+        </article>
+        <article>
+          <h2>Technology in Daily Life</h2>
+          <p>
+            Smart home devices and wearable technology are making life more
+            convenient and connected.
+          </p>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308"
+              alt="Smart home devices"
+              width="400"
+            />
+            <figcaption>Technology enhances modern lifestyles.</figcaption>
+          </figure>
+          <table border="1">
+            <caption>
+              Popular Smart Devices
+            </caption>
+            <thead>
+              <tr>
+                <th>Device</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Smart Speaker</td>
+                <td>Voice assistant</td>
+              </tr>
+              <tr>
+                <td>Fitness Tracker</td>
+                <td>Health monitoring</td>
+              </tr>
+              <tr>
+                <td>Smart Thermostat</td>
+                <td>Climate control</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <aside>
+          <h3>Quick Tips</h3>
+          <nav>
+            <ul>
+              <li><a href="#healthy-living">Healthy Living</a></li>
+              <li><a href="#home-decor">Home Decor</a></li>
+              <li><a href="#travel-adventure">Travel & Adventure</a></li>
+              <li><a href="#fashion">Fashion</a></li>
+              <li><a href="#technology">Technology</a></li>
+            </ul>
+          </nav>
+          <form>
+            <fieldset>
+              <legend>Subscribe for Updates</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" /><br />
+              <input type="checkbox" id="agree" name="agree" />
+              <label for="agree">I agree to receive emails</label><br />
+              <button type="submit">Subscribe</button>
+            </fieldset>
+          </form>
+        </aside>
+        <section>
+          <h2>Frequently Asked Questions</h2>
+          <dl>
+            <dt>What is a healthy lifestyle?</dt>
+            <dd>
+              A healthy lifestyle includes balanced nutrition, regular exercise,
+              and mental well-being.
+            </dd>
+            <dt>How can I make my home eco-friendly?</dt>
+            <dd>
+              Use sustainable materials, reduce waste, and maximize energy
+              efficiency.
+            </dd>
+          </dl>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

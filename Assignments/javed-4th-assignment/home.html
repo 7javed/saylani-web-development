@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h1>Welcome to Daily News Portal</h1>
+        <p>
+          Your trusted source for the latest news from around the world. Stay
+          updated with breaking news, in-depth analysis, and exclusive reports.
+        </p>
+      </section>
+
+      <section>
+        <h2>Top Stories</h2>
+        <ul>
+          <li>
+            <h3>Global Leaders Meet for Climate Summit</h3>
+            <p>
+              World leaders gather to discuss urgent climate action and
+              sustainable solutions.
+            </p>
+          </li>
+          <li>
+            <h3>Tech Giants Announce New Innovations</h3>
+            <p>
+              Major technology companies unveil their latest products and
+              advancements.
+            </p>
+          </li>
+          <li>
+            <h3>Sports Championships Heat Up</h3>
+            <p>
+              Exciting matches and unexpected results highlight this week's
+              sports events.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Latest Articles</h2>
+        <ol>
+          <li>
+            <a href="world.html">Economic Shifts in Asia</a>
+          </li>
+          <li>
+            <a href="health.html">Health Tips for the Summer</a>
+          </li>
+          <li>
+            <a href="tech.html">AI Trends in 2024</a>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Editor's Picks</h2>
+        <article>
+          <h3>Interview: A Conversation with a Nobel Laureate</h3>
+          <p>
+            Insights from this year's Nobel Prize winner on science and society.
+          </p>
+        </article>
+        <article>
+          <h3>Travel: Exploring Hidden Gems</h3>
+          <p>Discover lesser-known destinations for your next adventure.</p>
+        </article>
+      </section>
+
+      <footer>
+        <p>Contact us: info@dailynews.com | &copy; 2024 Daily News Portal</p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Business News - Global Times</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+    <main>
+      <section>
+        <h2>Business News</h2>
+        <article>
+          <h3>EcoTech Solutions Expands into Renewable Energy</h3>
+          <p>
+            <strong>June 10, 2024</strong> &mdash; EcoTech Solutions, a leading
+            provider of sustainable business technologies, announced its
+            expansion into the renewable energy sector. The company plans to
+            invest $200 million in solar and wind projects across Southeast
+            Asia.
+          </p>
+          <p>
+            CEO Maria Lopez stated, "Our mission is to drive innovation while
+            reducing environmental impact. This move aligns with our long-term
+            vision for a greener future."
+          </p>
+          <p>
+            Industry analysts predict that EcoTech's entry could accelerate the
+            adoption of clean energy in emerging markets. The company will
+            partner with local governments and international investors to ensure
+            project success.
+          </p>
+        </article>
+
+        <article>
+          <h3>FinServe Bank Launches Digital-Only Branches</h3>
+          <p>
+            <strong>June 9, 2024</strong> &mdash; FinServe Bank has launched its
+            first series of digital-only branches, aiming to provide seamless
+            banking experiences without physical locations. Customers can open
+            accounts, apply for loans, and access financial advice entirely
+            online.
+          </p>
+          <p>
+            The initiative is part of FinServe's broader digital transformation
+            strategy, focusing on accessibility and efficiency. Early feedback
+            from users has been positive, citing convenience and faster service.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Global Times. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

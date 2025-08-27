@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-container"></div>
+    </header>
+
+    <script>
+      fetch('./menu.html') // adjust path if needed
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById('menu-container').innerHTML = html;
+        });
+    </script>
+
+    <main>
+      <section>
+        <article>
+          <h1>Breaking News: Major Tech Breakthrough</h1>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              alt="Tech News"
+              width="600"
+              height="300"
+            />
+            <figcaption>Innovative technology changing the world.</figcaption>
+          </figure>
+          <p>
+            Scientists have announced a major breakthrough in artificial
+            intelligence, promising to revolutionize industries worldwide.
+            <mark>Experts</mark> say this could impact
+            <strong>healthcare</strong>, <em>education</em>, and
+            <u>transportation</u>.
+          </p>
+          <aside>
+            <h2>Quick Facts</h2>
+            <ul>
+              <li>AI adoption up 30% in 2024</li>
+              <li>Global investment reaches $100B</li>
+              <li>Concerns about ethics remain</li>
+            </ul>
+          </aside>
+          <details>
+            <summary>Read more about the breakthrough</summary>
+            <p>
+              The new AI model can process data at unprecedented speeds,
+              enabling real-time decision making in critical applications.
+            </p>
+          </details>
+          <blockquote cite="https://www.bbc.com/news/technology">
+            "This is a pivotal moment for technology and society." – BBC News
+          </blockquote>
+          <address>
+            By Jane Doe, Tech Correspondent<br />
+            Email: jane.doe@example.com
+          </address>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>World News: Global Summit 2024</h2>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="World Summit"
+              width="600"
+              height="300"
+            />
+            <figcaption>Leaders gather to discuss climate change.</figcaption>
+          </figure>
+          <p>
+            Representatives from over 100 countries met to address
+            <abbr title="Climate Change">CC</abbr> and sustainable development.
+          </p>
+          <ol>
+            <li>Opening Ceremony</li>
+            <li>Panel Discussions</li>
+            <li>Workshops</li>
+            <li>Closing Remarks</li>
+          </ol>
+          <nav aria-label="Related Articles">
+            <a href="./pages/world.html">More World News</a> |
+            <a href="./pages/science.html">Science Updates</a>
+          </nav>
+          <time datetime="2024-06-10">June 10, 2024</time>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Health: New Fitness Trends</h2>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1503676382389-4809596d5290"
+              alt="Fitness"
+              width="600"
+              height="300"
+            />
+            <figcaption>People embracing outdoor workouts.</figcaption>
+          </figure>
+          <p>
+            <span>Fitness experts</span> recommend <b>HIIT</b> and
+            <i>yoga</i> for a balanced lifestyle.
+            <small>Source: Health Magazine</small>
+          </p>
+          <dl>
+            <dt>HIIT</dt>
+            <dd>High-Intensity Interval Training</dd>
+            <dt>Yoga</dt>
+            <dd>Mind-body practice</dd>
+          </dl>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Entertainment: Movie Premiere</h2>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b"
+              alt="Movie Premiere"
+              width="600"
+              height="300"
+            />
+            <figcaption>Red carpet event draws celebrities.</figcaption>
+          </figure>
+          <p>
+            The latest blockbuster has hit theaters, drawing crowds and rave
+            reviews.
+          </p>
+          <table>
+            <caption>
+              Top 3 Movies
+            </caption>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Gross</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Galactic Quest</td>
+                <td>$120M</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>City Lights</td>
+                <td>$95M</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Hidden Truth</td>
+                <td>$80M</td>
+              </tr>
+            </tbody>
+          </table>
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <video width="320" height="240" controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Travel: Top Destinations 2024</h2>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              alt="Travel Destination"
+              width="600"
+              height="300"
+            />
+            <figcaption>Explore the world's most beautiful places.</figcaption>
+          </figure>
+          <p>Discover breathtaking locations and plan your next adventure.</p>
+          <ul>
+            <li>Paris</li>
+            <li>Bali</li>
+            <li>New York</li>
+            <li>Tokyo</li>
+          </ul>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=2.2945%2C48.8584%2C2.2950%2C48.8589&amp;layer=mapnik"
+            width="400"
+            height="200"
+            title="Map of Paris"
+          ></iframe>
+          <br />
+          <button type="button">Book Now</button>
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <label for="newsletter">Subscribe to travel newsletter</label>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
